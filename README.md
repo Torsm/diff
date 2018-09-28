@@ -1,6 +1,6 @@
 # diff
 
-Tool to spot differences in file trees of two separate directories.
+Tool to find differences in file trees of two separate directories.
 
 ## About
 
@@ -34,7 +34,7 @@ Compute and retrieve the results
 Set<FileDiff> diff = scan.findDifferences();
 ```
 
-If serializing the resulting set with Gson, you can use the `DeltaSerializer` for a more cleaned up outcome
+If serializing the resulting set with Gson, the `DeltaSerializer` can be used for a cleaner outcome
 ```java
 Gson gson = new GsonBuilder()
         .registerTypeAdapter(Delta.class, new DeltaSerializer())
